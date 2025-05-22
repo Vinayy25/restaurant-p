@@ -77,7 +77,12 @@ Administrative panel for restaurant staff with features:
      DB_NAME=restaurantdb
      ```
 
-4. Access the site through your web browser:
+4. Media files and libraries:
+
+   - **Important**: Some large media files and third-party libraries are not included in this repository.
+   - See [MEDIA_INSTRUCTIONS.md](MEDIA_INSTRUCTIONS.md) for details on how to obtain these files.
+
+5. Access the site through your web browser:
    - The first visit will automatically set up the database
    - After setup, you can access:
      - Customer site: `/customerSide/home/home.php`
@@ -101,4 +106,5 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 # restaurant-p

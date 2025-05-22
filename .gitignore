@@ -43,3 +43,25 @@ yarn-error.log*
 
 # Setup files
 setup_completed.flag 
+
+# Large media files
+customerSide/image/frontpagevedio.mp4
+customerSide/image/loginBackground.jpg
+*.mp4
+*.mov
+*.wmv
+*.avi
+*.flv
+*.webm
+
+# Large images
+*.psd
+*.ai
+*.tif
+*.tiff
+*.bmp
+# Only ignore large JPG/PNG files (>1MB)
+# You'll need to selectively add specific large images if needed
+
+# Third-party libraries that can be installed via package managers
+adminSide/posBackend/fpdf186/ 
