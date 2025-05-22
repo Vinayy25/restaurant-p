@@ -1,0 +1,27 @@
+name: PHP Code Quality Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "7.4"
+          extensions: mbstring, intl, pdo_mysql
+          coverage: none
+
+      - name: Check PHP syntax errors
+        run: find . -name "*.php" -not -path "./vendor/*" -print0 | xargs -0 -n1 php -l
+
+    # Add more checks as needed for your project
+    # Examples include PHPUnit tests, code style checks, etc.
